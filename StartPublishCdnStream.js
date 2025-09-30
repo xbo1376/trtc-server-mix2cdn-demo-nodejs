@@ -1,6 +1,6 @@
 
 const tencentcloud = require("tencentcloud-sdk-nodejs");
-const { RESTAPI_SECRETID, RESTAPI_SECRETKEY} = require("./config");
+const { RESTAPI_SECRETID, RESTAPI_SECRETKEY, VOD_SUBAPPID} = require("./config");
 
 const TrtcClient = tencentcloud.trtc.v20190722.Client;
 
@@ -94,14 +94,13 @@ const request = function (sdkappid, roomid, agent_userid,  agent_user_sig, userl
         "RecordParams": {
             "UniRecord": 3,
             "RecordFormat": [
-                "mp4",
-                "hls"
+                "mp4"
             ],
             "McuStorageParams": {
                 "McuCloudVod": {
                     "McuTencentVod": {
                         "ExpireTime": 0,
-                        "SubAppId": 1500012399
+                        "SubAppId": VOD_SUBAPPID
                     }
                 }
             }
@@ -129,8 +128,6 @@ const request = function (sdkappid, roomid, agent_userid,  agent_user_sig, userl
 module.exports = {
     request,
 }
-
-
 
 // {
 //   TaskId: 'D0fl9aZRstzOXDmPyIeDoevpi-HaAKwfVf4UtbFuGdpi++Iw9pP0FOpOYkgdMNK52kIoPlhGeDRovtVcT2SnD1Ks9fLRAAA.',

@@ -6,6 +6,7 @@ const SECRETKEY = "";
 
 const PUSH_DOMAIN = "";
 const AUTHENTICATION_KEY = "";
+const VOD_SUBAPPID = 0;
 
 module.exports = {
     RESTAPI_SECRETID,
@@ -15,5 +16,7 @@ module.exports = {
     SECRETKEY,
 
     PUSH_DOMAIN,
-    AUTHENTICATION_KEY
+    AUTHENTICATION_KEY,
+
+    VOD_SUBAPPID,
 }

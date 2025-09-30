@@ -1,4 +1,3 @@
-// Depends on tencentcloud-sdk-nodejs version 4.0.3 or higher
 
 const TLSSigAPIv2 = require('./tools/TLSSigAPIv2');
 const CDNTools = require('./tools/CDNTools');
