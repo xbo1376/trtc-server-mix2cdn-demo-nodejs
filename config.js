@@ -1,0 +1,19 @@
+const RESTAPI_SECRETID = "";
+const RESTAPI_SECRETKEY = "";
+
+const SDKAPPID = "";
+const SECRETKEY = "";
+
+const PUSH_DOMAIN = "";
+const AUTHENTICATION_KEY = "";
+
+module.exports = {
+    RESTAPI_SECRETID,
+    RESTAPI_SECRETKEY,
+
+    SDKAPPID,
+    SECRETKEY,
+
+    PUSH_DOMAIN,
+    AUTHENTICATION_KEY
+}
